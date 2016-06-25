@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.MainActivityFragment">
+
+    <TextView
+        android:id="@+id/tv_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:text="အညီအမျှ"
+        android:textSize="@dimen/text_regular_2"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_joke"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/imgae_height"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_mediuml"
+        android:scaleType="centerCrop"
+        android:src="@drawable/joke_1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/scroll_text_height">
+
+        <TextView
+            android:id="@+id/tv_body"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/scroll_text_height"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginRight="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:lineSpacingMultiplier="1.3"
+            android:text="နောက်တစ်နှစ်ပေါ့လင်မယား ၂ ယောက်စကားများရန်ဖြစ်ရာမှကွာရှင်းပြတ်ဆဲရန်တရားရုံးတွင်စီစဉ်နေကြသည်တရားသူကြီး : မင်းတို့မှာကလေး ၃ ယောက်ရှိတာဘယ်လိုခွဲမလဲ?လင်မယား ၂ ယောက်တွေဝေသွားပြီးမိနစ်အနည်းငယ်ကြာစဉ်းစားကာ 'တရားသူကြီးမင်းခင်ဗျား ကျနော်တို့တစ်နှစ်တာအချိန်အတွင်းနောက်တစ်ယောက်ထပ်မွေးပြီးပြန်လာခဲ့ပါ့မယ်' ဟုပြောလိုက်သည်။၉ လခန့်ကြာသော် အမြွှာပူးလေးမွေးလေသည်။" />
+
+    </ScrollView>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2">
+
+        <RadioButton
+            android:id="@+id/rb_ayan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="a yan yee ya tal" />
+
+        <RadioButton
+            android:id="@+id/rb_yeeyatal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yee ya tal"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/margin_medium_2">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next" />
+
+    </LinearLayout>
+
+</LinearLayout>
